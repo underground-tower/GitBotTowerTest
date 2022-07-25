@@ -4,7 +4,7 @@
 from github import Github
 import time
 import bs4, requests
-g = Github('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')
+g = Github('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 
 def CreateFile(filename="file_name.txt",filedata="filedata",commit="",userName="underground-tower",repoName="GitBotTowerTest"):
 	global g
