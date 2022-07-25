@@ -4,7 +4,7 @@
 from github import Github
 import time,github
 import bs4, requests
-g = Github('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
+g = Github('XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
 #github.enable_console_debug_logging()
 def CreateFile(filename="file_name.txt",filedata="filedata",commit="",userName="underground-tower",repoName="GitBotTowerTest"):
 	global g
@@ -37,8 +37,10 @@ while 1:
 	b = bs4.BeautifulSoup(s.text, "html.parser")
 
 	if(ip!=b):
-		print("New ip",b, end="r")
+		print(end='\r')
+		print("New ip  ",b)
 		UpdateFile(filedata=str(b))
+		ip=b
 	time.sleep(10)
 
 
