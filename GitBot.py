@@ -12,7 +12,7 @@ def CreateFile(filename="file_name.txt",filedata="filedata",commit="",userName="
 	repo = user.get_repo(repoName)
 	repo.create_file(filename, commit, filedata)
 
-def DeleteFile(filename="file_name.txt",filedata="filedata",commit="",userName="underground-tower",repoName="GitBotTowerTest"):
+def DeleteFile(filename="file_name.txt",userName="underground-tower",repoName="GitBotTowerTest"):
 	global g
 	user = g.get_user(userName)
 	repo = user.get_repo(repoName)
